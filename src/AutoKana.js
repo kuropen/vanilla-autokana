@@ -1,3 +1,5 @@
+const objectAssign = require('object-assign');
+
 /**
  * @param {string} str
  * @param {string} chars
@@ -35,7 +37,7 @@ export default class AutoKana {
     this.timer = null;
     this.initializeValues();
 
-    this.option = Object.assign(
+    this.option = objectAssign(
       {
         katakana: false,
         debug: false,
